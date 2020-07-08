@@ -1,0 +1,8 @@
+CategoryA,Identifier,Category B,Category C,"Category_D [x=2, y='cool']",,
+a,10,1,2.34,,Extra column
+aa,11,2,1.4142135624,"I have a quote: """,    ,
+“aaa”,12,3,37038239146735200000000000000000000,,,
+xx,   "Manual modified fields with spaces: LibreOffice parser error adds these space incorrectly:"    ,  23  
+=23+45
+=SUM(C2:C4)
+"2.345"

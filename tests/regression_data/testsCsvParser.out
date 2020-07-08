@@ -1,0 +1,84 @@
+
+
+
+
+--]]
+--]]
+--]]
+--]]
+--]]
+--]]
+--]]
+--]]
+--]]
+--]]
+--]]
+_01
+_01 ->     
+_02
+_02 -> 
+1
+10
+12
+  23  
+2.34
+=23+45
+2.345
+3
+37038239146735200000000000000000000
+a
+A081: Confidence Interval 1(72927,Total Pts: 12)
+A081: Confidence Interval 1(72927,Total Pts: 12) -> 12.00
+A081: Confidence Interval 1(72927,Total Pts: 12) -> 7.00
+“aaa”
+Analysis Paper 1(71242,Total Pts: 80)
+Analysis Paper 1(71242,Total Pts: 80) -> 
+Analysis Paper 1(71242,Total Pts: 80) -> Needs Grading
+Availability
+Availability -> Yes
+Availability -> Yes
+CategoryA
+CategoryA -> aa
+Category B
+Category B -> 2
+Category C
+Category C -> 1.4142135624
+Category_D [x=2, y='cool']
+Category_D [x=2, y='cool'] -> I have a quote: "
+Extra column
+First Name
+First Name -> John
+First Name -> Matt
+Identifier
+Identifier -> 11
+Last Access
+Last Access -> 2016-02-20 18:52:54
+Last Access -> 2016-02-24 11:35:26
+Last Name
+Last Name -> Cool
+Last Name -> Doe
+   "Manual modified fields with spaces: LibreOffice parser error adds these space incorrectly:"    
+--[[ printKeyedTable
+--[[ printKeyedTable
+--[[ printKeyedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+--[[ printOrderedTable
+Student ID
+Student ID -> 
+Student ID -> 
+=SUM(C2:C4)
+Testing data: ./testsCsvParser.data/bb01.csv
+Testing data: ./testsCsvParser.data/libreoffice01.csv
+Username
+Username -> john.doe
+Username -> matt.cool
+Weighted Total(66663,Total Pts: up to 367)
+Weighted Total(66663,Total Pts: up to 367) -> 56.83%
+Weighted Total(66663,Total Pts: up to 367) -> 93.46%
+xx

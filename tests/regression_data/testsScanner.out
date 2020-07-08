@@ -1,0 +1,12 @@
+Parsing Text:
+>>0293893 hello900   'this is '' a string'
+		begin some stuff begin other end end<<
+[[0293893]](Digits, 1, 7)
+[[ ]](Whitespace, 8, 8)
+[[hello]](Letters, 9, 13)
+[[900]](Digits, 14, 16)
+[[   ]](Whitespace, 17, 19)
+[['this is '' a string']](String, 20, 40)([[']](Start, 20, 20))
+[[
+		]](Whitespace, 41, 43)
+[[begin some stuff begin other end end]](BeginEndChunk, 44, 79)([[begin]](Start, 44, 48)[[ ]](nil, 49, 49)[[some]](Letters, 50, 53)[[ ]](Whitespace, 54, 54)[[stuff]](Letters, 55, 59)[[ ]](Whitespace, 60, 60)[[begin other end]](BeginEndChunk, 61, 75)([[begin]](Start, 61, 65)[[ ]](nil, 66, 66)[[other]](Letters, 67, 71)[[ ]](Whitespace, 72, 72)[[end]](Letters, 73, 75))[[ ]](Whitespace, 76, 76)[[end]](Letters, 77, 79))
