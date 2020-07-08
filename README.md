@@ -4,7 +4,7 @@
 
 LuaObjects2017 is a pattern for putting an Object-Oriented Programming (OOP) paradigm onto Lua.  Like others, it uses a [prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming) style.  However, my concerns were mainly creating a system that is easy to manage while maintaining decent execution speed.
 
-The root class of the system is `CL.Object`.  Subclasses use the Lua metatable to extend a new object's behavior by reference rather than a copy.  Some of the features that you will find are examples for are:
+The root class of the system is `CL.Object`.  Subclasses use the Lua metatable to extend a new object's behavior by reference rather than a copy.  In these directories you will find examples for:
 
 - Creating a new class (prototype) with methods.
 - Adding methods to an existing class.
