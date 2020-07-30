@@ -29,10 +29,10 @@ One of the nice features of Lua is its interface to C. Within the `libSources` d
 - libSources -- Examples for generating C bindings.
 - mods -- Contains a few modules.
 - templates -- Some example patterns for using the system. (See its `README.md`.)
-- tests -- Test code for modules.  (Very basic for TDD ... does not use LuaUnit.)
+- tests -- Test code for modules.  (Very basic TDD ... does not use LuaUnit.)
 
 ## Disclaimer
 
-Admittedly, this system is a one-person project. I have used it as the basis for many small projects in the past few years, but it has not been used in any collaborative project.  Also, I would not consider the code especially great examples of Lua code. Rather, it implements a particular OOP style using select features of Lua.
+Admittedly, this system is a one-person project. I have used it as the basis for many small projects in the past few years, but it has not been used in any collaborative project.  It implements a particular OOP style using select features of Lua.  The open style allows access and modification to all parts of a system.  This openness is much more manageable than it may seem on the surface.  A globally accessed class set is common for Smalltalk systems.  Each module in my Lua system is analogous to a *change set* in the Smalltalk world.
 
 Jon Anderson (jonkanderson@gmail.com)
