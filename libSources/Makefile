@@ -2,7 +2,8 @@ OUTDIR?=../out/lib
 BUILDDIR=../out/build
 TESTDIR=../tests
 
-LUA=/usr/bin/lua5.3
+LUA_VERSION=5.4
+LUA=/usr/bin/lua$(LUA_VERSION)
 CC=/usr/bin/clang
 
 #-------------------------------------------------------------
@@ -31,8 +32,8 @@ clean_%:
 $(OUTDIR)/%.so:
 	$(MAKE) $(BUILDDIR)/$*.c
 	mkdir -p $(OUTDIR)
-	$(CC) -shared $(LIBSFOR_$*) $(LUALIB) -llua5.3 -o $@ -fPIC $(BUILDDIR)/$*.c
+	$(CC) -shared $(LIBSFOR_$*) $(LUALIB) -llua$(LUA_VERSION) -o $@ -fPIC $(BUILDDIR)/$*.c
 
 $(BUILDDIR)/%.c: build_%.lua
 	mkdir -p $(BUILDDIR)
-	$(LUA) $< "$@" ; if [ $$? != 0 ] ; then rm $@ ; fi
+	$(LUA) $< "$(LUA_VERSION)" "$@"; if [ $$? != 0 ] ; then rm $@ ; fi

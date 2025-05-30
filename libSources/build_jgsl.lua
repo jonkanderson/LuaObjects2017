@@ -9,7 +9,8 @@ Build a CW library which provides these object constructors:
 	Time -- Access to the system time.
 --]]
 local args = {...}
-local cOutfilename = assert(args[1])
+local luaVersion = assert(args[1])
+local cOutfilename = assert(args[2])
 local libName = "jgsl"
 local CL, FN, COL, S = dofile('../root.lua')
 
@@ -22,6 +23,7 @@ Pm:loadMod('modCWriter.lua')
 -- DO MAIN
 
 local CW = CL.CWriter:newInstance()
+CW:setLuaVersion(luaVersion)
 CW:setOutfile(assert(io.open(cOutfilename, 'w')))
 CW:luaIncludes()
 

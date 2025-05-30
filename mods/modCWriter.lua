@@ -43,10 +43,8 @@ function ThisInst:init()
 end
 
 function ThisInst:luaIncludes()
---	self:include("lua5.2/lua.h")
---	self:include("lua5.2/lauxlib.h")
-	self:include("lua5.3/lua.h")
-	self:include("lua5.3/lauxlib.h")
+	self:include("lua" .. self.varLuaVersion .. "/lua.h")
+	self:include("lua" .. self.varLuaVersion .. "/lauxlib.h")
 end
 
 function ThisInst:objectsDo(aFunction)
@@ -61,6 +59,10 @@ end
 
 function ThisInst:setOutfile(aFileStream)
 	self.varOutfile = aFileStream
+end
+
+function ThisInst:setLuaVersion(aString)
+	self.varLuaVersion = aString
 end
 
 function ThisInst:write(aString)
